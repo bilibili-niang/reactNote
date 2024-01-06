@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+// 项目的根组件
+// App -> index.js ->public/index.html(root)
+
+let text = "这是一个字符串";
+
+let returnStr = (name) => {
+  return "名字是:" + name;
+};
+let list = [
+  {
+    name: "张三",
+    age: 12
+  }, {
+    name: "李四",
+    age: 12
+  }, {
+    name: "王五",
+    age: 21
+  }
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      this is App
+      "这是一个字符串"
+      <br/>
+      {text}
+      <br/>
+      {returnStr("张三")}
+      <br/>
+      {list.map(item => <li>{item.name}</li>)}
     </div>
   );
 }
