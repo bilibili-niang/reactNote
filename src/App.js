@@ -1,37 +1,14 @@
-// 项目的根组件
-// App -> index.js ->public/index.html(root)
+import React from "react";
+import Action1 from "./pages/Action1/index";
+import Index from "./pages/index";
+import Action2 from "./pages/Action2/index";
 
-let text = "这是一个字符串";
-
-let returnStr = (name) => {
-  return "名字是:" + name;
-};
-let list = [
-  {
-    name: "张三",
-    age: 12
-  }, {
-    name: "李四",
-    age: 12
-  }, {
-    name: "王五",
-    age: 21
-  }
-];
-
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      this is App
-      "这是一个字符串"
-      <br/>
-      {text}
-      <br/>
-      {returnStr("张三")}
-      <br/>
-      {list.map(item => <li>{item.name}</li>)}
+    <div className="app">
+      <Action1></Action1>
+      <Index></Index>
+      <Action2></Action2>
     </div>
   );
 }
-
-export default App;

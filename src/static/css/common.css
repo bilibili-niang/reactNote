@@ -1,0 +1,23 @@
+.ice-header {
+    font-weight: bold;
+    font-family: "PingFang SC";
+    font-size: 1.1rem;
+    animation-duration: inherit;
+    transition-duration: .3s;
+    border-left: rgba(0, 0, 0, 0) 0 solid;
+    padding-left: 0;
+
+    &:before {
+        content: "#";
+        font-size: 1.5rem;
+    }
+
+    &:hover {
+        padding-left: 1rem;
+        border-left: #ff0000 .5rem solid;
+    }
+}
+
+html {
+    font-size: 16px;
+}
