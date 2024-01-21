@@ -23,7 +23,6 @@ export default function ActionDemo() {
       ...demoFrom,
       name: "jackChen"
     });
-
   };
 
   return <div className="action2">
