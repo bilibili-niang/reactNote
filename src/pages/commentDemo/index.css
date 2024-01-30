@@ -1,0 +1,18 @@
+.list {
+    border-bottom: #cbcbcb 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.delete {
+    color: #f00;
+    cursor: pointer;
+}
+
+.ice-text {
+    color: #000;
+    font-size: 1.5rem;
+}
