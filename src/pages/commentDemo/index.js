@@ -1,4 +1,5 @@
 import {useState} from "react";
+import _ from "lodash";
 
 import("./index.css");
 
@@ -10,19 +11,25 @@ export default function StyleDemo() {
       id: 0,
       title: "标题一",
       content: "这里是内容",
-      userId: 1
+      userId: 1,
+      like: 5,
+      ctime: 564
     },
     {
       id: 1,
       title: "测试标题二",
       content: "这里是内容",
-      userId: 2
+      userId: 2,
+      like: 12,
+      ctime: 12
     },
     {
       id: 2,
       title: "测试标题三",
       content: "这里是内容",
-      userId: 1
+      userId: 1,
+      like: 45,
+      ctime: 87
     }
   ];
   const [commentList, setCommentList] = useState(list);
@@ -47,9 +54,13 @@ export default function StyleDemo() {
   ];
   const [type, setType] = useState("最新");
 
-
   const handleTabChange = (text) => {
     setType(text);
+    if (text === "hot") {
+      setCommentList(_.orderBy(commentList, "like", "desc"));
+    } else {
+      setCommentList(_.orderBy(commentList, "ctime", "desc"));
+    }
   };
   return <div className="styleDemo">
     <div className="ice-header">
@@ -57,7 +68,8 @@ export default function StyleDemo() {
     </div>
     <div className="type">
       {
-        types.map(item => <span className={`typeItem ${type===item.text ? "active" : ""}`} key={item.id} onClick={() => handleTabChange(item.text)}>
+        types.map(item => <span className={`typeItem ${type === item.text ? "active" : ""}`} key={item.id}
+                                onClick={() => handleTabChange(item.text)}>
         {item.text}
           <br/>
         </span>)
