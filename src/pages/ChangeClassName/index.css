@@ -1,0 +1,15 @@
+.block {
+    display: flex;
+    height: 100px;
+    width: 100px;
+}
+
+.active {
+    background-color: lightpink;
+    border-radius: 20px;
+}
+
+.squire {
+    background: #f17f10;
+    border-radius: 2px;
+}

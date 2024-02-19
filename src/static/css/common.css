@@ -18,6 +18,13 @@
     }
 }
 
+.ice-text {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    border-left: rgba(255, 0, 233, 0.66) .2rem solid;
+}
+
 html {
     font-size: 16px;
 }
@@ -43,4 +50,14 @@ html {
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+}
+
+.ice-input {
+    height: 1.7rem;
+    border: none;
+    border-bottom: 2px solid #333333;
+    padding: 0 10px;
+    font-size: 1.1rem;
+    color: #333333;
+    outline: none;
 }
