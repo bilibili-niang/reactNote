@@ -9,6 +9,7 @@ import ChangeClassName from "./pages/ChangeClassName/index.js";
 import FormBind from "./pages/FormBind";
 import ReactUseRef from "./pages/ReactUseRef";
 import Communication from "./pages/Communication";
+import Communication2 from "./pages/Communication2";
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
       <Communication name={"this is a name"}>
         stringggggg!!!!!!!!!!!!
       </Communication>
+      <Communication2></Communication2>
     </div>
   );
 }
