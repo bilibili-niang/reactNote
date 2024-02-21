@@ -10,6 +10,7 @@ import FormBind from "./pages/FormBind";
 import ReactUseRef from "./pages/ReactUseRef";
 import Communication from "./pages/Communication";
 import Communication2 from "./pages/Communication2";
+import BrotherCommunication from "./pages/BrotherCommunication";
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
         stringggggg!!!!!!!!!!!!
       </Communication>
       <Communication2></Communication2>
+      <BrotherCommunication></BrotherCommunication>
     </div>
   );
 }
